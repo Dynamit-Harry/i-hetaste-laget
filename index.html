@@ -17,39 +17,65 @@
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 	<script>
-		// skapar en Temperatur graf
+
+
 		window.onload = function () {
 
-			var chart = new CanvasJS.Chart("chartContainer", {
-				animationEnabled: true,
-				theme: "light2",
-				title: {
-					text: "Temperatur"
-				},
-				data: [{
-					type: "line",
-					indexLabelFontSize: 16,
-					//   Sätter 12 olika värden som är slumpmässigt bestämmda mellan 8 och 31
-					dataPoints: [
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 }
-					]
-				}]
-			});
-			chart.render();
 
-		}
-	</script>
+
+			fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
+
+				.then(response => response.json())
+
+				.then(json => {
+
+
+					let humPoints = []
+
+					let tempPoints = []
+
+					for (const key in json['Hum']['Log']) {
+
+						humPoints.push({ y: json['Hum']['Log'][key] })
+
+					}
+
+
+					for (const key in json['Hum']['Log']) {
+
+						tempPoints.push({ y: json['Hum']['Log'][key] })
+
+					}
+
+					var chart = new CanvasJS.Chart("chartContainer", {
+
+						animationEnabled: true,
+
+						theme: "light2",
+
+						title: {
+
+							text: "Temperatur"
+
+						},
+
+						data: [{
+
+							type: "line",
+
+							indexLabelFontSize: 16,
+
+							dataPoints: humPoints
+
+						}]
+
+					});
+
+					chart.render();
+
+				})
+
+		}</script>
 
 
 </head>
