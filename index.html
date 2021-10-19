@@ -18,37 +18,53 @@
 
 	<script>
 		// skapar en Temperatur graf
-		window.onload = function () {
+		
+window.onload = function () {
 
-			var chart = new CanvasJS.Chart("chartContainer", {
-				animationEnabled: true,
-				theme: "light2",
-				title: {
-					text: "Temperatur"
-				},
-				data: [{
-					type: "line",
-					indexLabelFontSize: 16,
-					//   Sätter 12 olika värden som är slumpmässigt bestämmda mellan 8 och 31
-					dataPoints: [
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 },
-						{ y: Math.floor(Math.random() * 23) + 8 }
-					]
-				}]
-			});
-			chart.render();
+var dps = []; // dataPoints
+var chart = new CanvasJS.Chart("chartContainer", {
+	title :{
+		text: "Tempratur&luftfuktighet"
+	},
+	data: [{
+		type: "line",
+		dataPoints: dps
+	}]
+});
 
-		}
+var xVal = 0;
+var yVal = 100; 
+var updateInterval = 1000;
+var dataLength = 20; // number of dataPoints visible at any point
+
+var updateChart = function (count) {
+
+	count = count || 1;
+
+	for (var j = 0; j < count; j++) {
+		yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
+		dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++;
+	}
+
+	if (dps.length > dataLength) {
+		dps.shift();
+	}
+
+	chart.render();
+};
+
+updateChart(dataLength);
+setInterval(function(){updateChart()}, updateInterval);
+
+}
+	if(MouseEvent="button"){
+	stop(updateChart)
+	}
+	
 	</script>
 
 
@@ -94,7 +110,7 @@
 				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 				<div id="curve_chart" style="width: 120x; height: 120px "></div>
 				<div id="curve_chart" style="width: 645px"></div>
-
+				<button type="button">pausa</button>
 				<!-- skriver texten innanför bubblan som ska visa all data -->
 				<p>Här är temperaturen i rummet som heter Terariet</p>
 				<p>Temperaturen är: --- grader.</p>
@@ -106,6 +122,8 @@
 
 			<!-- Work -->
 			<article id="work">
+				<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 				<h2 class="major">Rum 2 Cafeterian</h2>
 
 				<div id="chartContainer" style="height: 300px; width: 90%;"></div>
