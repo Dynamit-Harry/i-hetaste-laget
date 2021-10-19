@@ -5,18 +5,21 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>I Hetaste Laget</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-		<script>
-			// skapar en Temperatur graf
-			window.onload = function () {
-			
+<head>
+	<title>I Hetaste Laget</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	<script>
+		// skapar en Temperatur graf
+		window.onload = function () {
+
 			var chart = new CanvasJS.Chart("chartContainer", {
 				animationEnabled: true,
 				theme: "light2",
@@ -28,18 +31,18 @@
 					indexLabelFontSize: 16,
 					//   Sätter 12 olika värden som är slumpmässigt bestämmda mellan 8 och 31
 					dataPoints: [
-						{ y: Math.floor(Math.random()*23) +8 },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  },
-						{ y: Math.floor(Math.random()*23) +8  }
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 },
+						{ y: Math.floor(Math.random() * 23) + 8 }
 					]
 				}]
 			});
@@ -72,7 +75,7 @@
 			<nav>
 				<ul>
 					<li><a href="#intro">Terariet</a></li>
-					<li><a href="#work">Cafeterian</a></li>
+					<li><a href="#work">Caféet</a></li>
 					<li><a href="#about">Bibblan</a></li>
 					<li><a href="#contact">Labett</a></li>
 					<!--<li><a href="#elements">Elements</a></li>-->
@@ -104,11 +107,11 @@
 			<!-- Work -->
 			<article id="work">
 				<h2 class="major">Rum 2 Cafeterian</h2>
-				
+
 				<div id="chartContainer" style="height: 300px; width: 90%;"></div>
 				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 				<div id="curve_chart" style="width: 120x; height: 120px "></div>
-				
+
 				<p>Här är temperaturen i rummet som heter Cafeterian</p>
 				<p>Temperaturen är: --- grader.</p>
 				<p>Luftfuktigheten är: ---%</p>
@@ -138,7 +141,8 @@
 				<p>Luftfuktigheten är: ---%</p>
 
 				<!-- Skapar en länk som tar personen tillbaka till första rummet -->
-				<p>Tryck<a href="#intro"><strong> här </strong></a>eller gå tillbaka för att gå till första rummet igen</p>
+				<p>Tryck<a href="#intro"><strong> här </strong></a>eller gå tillbaka för att gå till första rummet igen
+				</p>
 			</article>
 
 		</div>
