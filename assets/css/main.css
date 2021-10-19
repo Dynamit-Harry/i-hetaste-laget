@@ -723,7 +723,7 @@ input, select, textarea {
 		}
 
 /* List */
-
+/* ändrar utseende för alla olika listor*/
 	ol {
 		list-style: decimal;
 		margin: 0 0 2rem 0;
@@ -774,8 +774,9 @@ input, select, textarea {
 		}
 
 /* Actions */
+/* listor med flexbox som gör att listorna kan flyttas lättare */
 
-	ul.actions {
+ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -824,7 +825,7 @@ input, select, textarea {
 			width: calc(100% + 1rem);
 		}
 
-			ul.actions.fit li {
+			 ul.actions.fit li {
 				-moz-flex-grow: 1;
 				-webkit-flex-grow: 1;
 				-ms-flex-grow: 1;
@@ -833,7 +834,7 @@ input, select, textarea {
 				-webkit-flex-shrink: 1;
 				-ms-flex-shrink: 1;
 				flex-shrink: 1;
-				width: 100%;
+				width: 100%; 
 			}
 
 				ul.actions.fit li > * {
@@ -896,7 +897,7 @@ input, select, textarea {
 		}
 
 /* Icons */
-
+/* ändrar utseende på alla ikoner */
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -930,6 +931,7 @@ input, select, textarea {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
 /* BG */
+/* BG= Background Image, ändrar utseendet på de */
 
 	#bg {
 		-moz-transform: scale(1.0);
