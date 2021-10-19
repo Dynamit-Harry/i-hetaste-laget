@@ -17,55 +17,65 @@
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 	<script>
-		// skapar en Temperatur graf
-		
-window.onload = function () {
 
-var dps = []; // dataPoints
-var chart = new CanvasJS.Chart("chartContainer", {
-	title :{
-		text: "Tempratur&luftfuktighet"
-	},
-	data: [{
-		type: "line",
-		dataPoints: dps
-	}]
-});
 
-var xVal = 0;
-var yVal = 100; 
-var updateInterval = 1000;
-var dataLength = 20; // number of dataPoints visible at any point
+		window.onload = function () {
 
-var updateChart = function (count) {
 
-	count = count || 1;
 
-	for (var j = 0; j < count; j++) {
-		yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
-		dps.push({
-			x: xVal,
-			y: yVal
-		});
-		xVal++;
-	}
+			fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
 
-	if (dps.length > dataLength) {
-		dps.shift();
-	}
+				.then(response => response.json())
 
-	chart.render();
-};
+				.then(json => {
 
-updateChart(dataLength);
-setInterval(function(){updateChart()}, updateInterval);
 
-}
-	if(MouseEvent="button"){
-	stop(updateChart)
-	}
-	
-	</script>
+					let humPoints = []
+
+					let tempPoints = []
+
+					for (const key in json['Hum']['Log']) {
+
+						humPoints.push({ y: json['Hum']['Log'][key] })
+
+					}
+
+
+					for (const key in json['Hum']['Log']) {
+
+						tempPoints.push({ y: json['Hum']['Log'][key] })
+
+					}
+
+					var chart = new CanvasJS.Chart("chartContainer", {
+
+						animationEnabled: true,
+
+						theme: "light2",
+
+						title: {
+
+							text: "Temperatur"
+
+						},
+
+						data: [{
+
+							type: "line",
+
+							indexLabelFontSize: 16,
+
+							dataPoints: humPoints
+
+						}]
+
+					});
+
+					chart.render();
+
+				})
+
+		}</script>
 
 
 </head>
@@ -133,7 +143,7 @@ setInterval(function(){updateChart()}, updateInterval);
 			<!-- Work -->
 			<article id="work">
 				<div id="chartContainer" style="height: 300px; width: 100%;"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 				<h2 class="major">Rum 2 Cafeterian</h2>
 
 				<div id="chartContainer" style="height: 300px; width: 90%;"></div>
