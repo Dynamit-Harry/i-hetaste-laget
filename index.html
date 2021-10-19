@@ -13,7 +13,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script>
-			// Temperatur graf
+			// skapar en Temperatur graf
 			window.onload = function () {
 			
 			var chart = new CanvasJS.Chart("chartContainer", {
@@ -25,7 +25,7 @@
 				data: [{
 					type: "line",
 					indexLabelFontSize: 16,
-					//   Värden
+					//   Sätter 12 olika värden som är slumpmässigt bestämmda mellan 8 och 31
 					dataPoints: [
 						{ y: Math.floor(Math.random()*23) +8 },
 						{ y: Math.floor(Math.random()*23) +8  },
@@ -81,21 +81,22 @@
 
 		<!-- Main -->
 		<div id="main">
-
+			<!-- alla artiklar följer samma princip så därför komenterar vi endast den första -->
 			<!-- Intro -->
 			<article id="intro">
 				<h2 class="major">Rum 1 Terariet</h2>
-
+				<!-- ritar upp grafen som vi skrev kod för i <head>  -->
 				<div id="chartContainer" style="height: 300px; width: 90%;"></div>
 				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 				<div id="curve_chart" style="width: 120x; height: 120px "></div>
-
-
-
 				<div id="curve_chart" style="width: 645px"></div>
+
+				<!-- skriver texten innanför bubblan som ska visa all data -->
 				<p>Här är temperaturen i rummet som heter Terariet</p>
 				<p>Temperaturen är: --- grader.</p>
 				<p>Luftfuktigheten är: ---%</p>
+
+				<!-- Skapar en hyperlänk som kopplar det här rummet till rummet efter -->
 				<p>Tryck<a href="#work"><strong> här </strong></a>eller gå tillbaka för att gå till nästa rum</p>
 			</article>
 
@@ -132,6 +133,8 @@
 				<p>Det här rummet heter Labett</p>
 				<p>Här är det --- grader varmt</p>
 				<p>Luftfuktigheten är: ---%</p>
+
+				<!-- Skapar en länk som tar personen tillbaka till första rummet -->
 				<p>Tryck<a href="#intro"><strong> här </strong></a>eller gå tillbaka för att gå till första rummet igen</p>
 			</article>
 
