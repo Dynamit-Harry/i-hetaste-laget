@@ -1486,3 +1486,12 @@ ul.actions {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		#datum {
+			color: #000000
+		}
+		#tempButton{
+			color: blue
+		}
+		#humButton {
+			color: blue
+		}
