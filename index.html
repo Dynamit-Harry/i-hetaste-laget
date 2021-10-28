@@ -8,6 +8,8 @@
 
 <head>
 	<title>I Hetaste Laget</title>
+	<link rel="icon"
+		href="https://i.ibb.co/Kjb3pLx/Sk-rmbild-2021-10-26-095719.png">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,8 +17,6 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-	
 
 
 </head>
@@ -44,7 +44,7 @@
 			<div class="content">
 				<div class="inner">
 					<h1>I Hetaste Laget</h1>
-					<p>Ett tekniskt underverk gjort av basgrupp 6.</p>
+					<p>Ett tekniskt underverk gjort av basgrupp 6</p>
 					<!--text som visas på startsidan-->
 				</div>
 			</div>
@@ -71,10 +71,17 @@
 				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 				<div id="curve_chart" style="width: 120x; height: 120px "></div>
 				<div id="curve_chart" style="width: 645px"></div>
+				<div>
+
+					<input type="date" name="" id="datum">
+			
+					<button id="knapp">Get Hum</button>
+					<button id="knapp2">Get Temp</button>
+			
+				</div>
 				<!-- skriver texten innanför bubblan som ska visa all data -->
 				<p>Här är temperaturen i rummet som heter Terariet</p>
-				<p>Temperaturen är: --- grader.</p>
-				<p>Luftfuktigheten är: ---%</p>
+				
 
 				<!-- Skapar en hyperlänk som kopplar det här rummet till rummet efter -->
 				<p>Tryck<a href="#work"><strong> här </strong></a>eller gå tillbaka för att gå till nästa rum</p>
@@ -88,11 +95,16 @@
 
 				<div id="chartContainer" style="height: 300px; width: 90%;"></div>
 				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-				<div id="curve_chart" style="width: 120x; height: 120px "></div>
+				<div>
+
+					<input type="date" name="" id="datum">
+			
+					<button id="knapp3">Get Hum</button>
+					<button id="knapp4">Get Temp</button>
+			
+				</div>
 
 				<p>Här är temperaturen i rummet som heter Cafeterian</p>
-				<p>Temperaturen är: --- grader.</p>
-				<p>Luftfuktigheten är: ---%</p>
 				<p>Tryck<a href="#about"><strong> här </strong></a>eller gå tillbaka för att gå till nästa rum</p>
 			</article>
 			<!-- About -->
@@ -101,9 +113,15 @@
 				<div id="chartContainer" style="height: 300px; width: 90%;"></div>
 				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 				<div id="curve_chart" style="width: 120x; height: 120px "></div>
+				<div>
+
+					<input type="date" name="" id="datum">
+			
+					<button id="knapp5">Get Hum</button>
+					<button id="knapp6">Get Temp</button>
+			
+				</div>
 				<p>Det här rummet heter Biblioteket men kallas för Bibblan</p>
-				<p>Här är det --- grader varmt</p>
-				<p>Luftfuktigheten är: ---%</p>
 				<p>Tryck<a href="#contact"><strong> här </strong></a>för att gå till nästa rum</p>
 			</article>
 
@@ -113,9 +131,16 @@
 				<div id="chartContainer" style="height: 300px; width: 90%;"></div>
 				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 				<div id="curve_chart" style="width: 120x; height: 120px "></div>
+				<div>
+
+					<input type="date" name="" id="datum">
+			
+					<button id="knapp7">Get Hum</button>
+					<button id="knapp8">Get Temp</button>
+			
+				</div>
 				<p>Det här rummet heter Labett</p>
-				<p>Här är det --- grader varmt</p>
-				<p>Luftfuktigheten är: ---%</p>
+
 
 				<!-- Skapar en länk som tar personen tillbaka till första rummet -->
 				<p>Tryck<a href="#intro"><strong> här </strong></a>eller gå tillbaka för att gå till första rummet igen
@@ -126,7 +151,8 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; ABB-Gymnasiet. Design By: <a href="https://html5up.net">Bas Grupp 6</a>.</p>
+			<p class="copyright">&copy; <a href="https://www.abbgymnasiet.se">ABB-Gymnasiet.</a> Design By: <a
+					href="https://i.ibb.co/P1kJ5WN/Microsoft-Teams-image-1.jpg">Bas Grupp 6</a>.</p>
 		</footer>
 
 	</div>
@@ -140,6 +166,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/js-domtest.js"></script>
 
 	<script>
 		// skapar en Temperatur graf
