@@ -4,7 +4,7 @@ button.onclick = function getData () {
 
 
 
-    fetch(`https://temperatur-projekt-default-rtdb.europe-west1.firebasedatabase.app/.json`)
+    fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
     .then(response => response.json())
     .then(json => {
 
@@ -26,7 +26,7 @@ button.onclick = function getData () {
 
                 title: {
 
-                    text: "Temperatur"
+                    text: "Luftfuktighet"
 
                 },
 
@@ -55,7 +55,7 @@ button.onclick = function getData () {
 
 
 
-    fetch(`https://temperatur-projekt-default-rtdb.europe-west1.firebasedatabase.app/.json`)
+    fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
     .then(response => response.json())
     .then(json => {
         
@@ -105,7 +105,7 @@ button.onclick = function getData () {
 
 
 
-    fetch(`https://temperatur-projekt-default-rtdb.europe-west1.firebasedatabase.app/.json`)
+    fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
     .then(response => response.json())
     .then(json => {
 
@@ -127,7 +127,7 @@ button.onclick = function getData () {
 
                 title: {
 
-                    text: "Temperatur"
+                    text: "Luftfuktighet"
 
                 },
 
@@ -156,7 +156,7 @@ button.onclick = function getData () {
 
 
 
-    fetch(`https://temperatur-projekt-default-rtdb.europe-west1.firebasedatabase.app/.json`)
+    fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
     .then(response => response.json())
     .then(json => {
         
@@ -206,7 +206,7 @@ button.onclick = function getData () {
 
 
 
-    fetch(`https://temperatur-projekt-default-rtdb.europe-west1.firebasedatabase.app/.json`)
+    fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
     .then(response => response.json())
     .then(json => {
 
@@ -228,7 +228,7 @@ button.onclick = function getData () {
 
                 title: {
 
-                    text: "Temperatur"
+                    text: "Luftfuktighet"
 
                 },
 
@@ -257,7 +257,7 @@ button.onclick = function getData () {
 
 
 
-    fetch(`https://temperatur-projekt-default-rtdb.europe-west1.firebasedatabase.app/.json`)
+    fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
     .then(response => response.json())
     .then(json => {
         
@@ -307,7 +307,7 @@ button.onclick = function getData () {
 
 
 
-    fetch(`https://temperatur-projekt-default-rtdb.europe-west1.firebasedatabase.app/.json`)
+    fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
     .then(response => response.json())
     .then(json => {
 
@@ -329,7 +329,7 @@ button.onclick = function getData () {
 
                 title: {
 
-                    text: "Temperatur"
+                    text: "Luftfuktighet"
 
                 },
 
@@ -358,7 +358,7 @@ button.onclick = function getData () {
 
 
 
-    fetch(`https://temperatur-projekt-default-rtdb.europe-west1.firebasedatabase.app/.json`)
+    fetch(`https://ihetastelaget6-default-rtdb.europe-west1.firebasedatabase.app/.json`)
     .then(response => response.json())
     .then(json => {
         
