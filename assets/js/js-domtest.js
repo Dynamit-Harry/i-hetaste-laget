@@ -101,7 +101,7 @@ button.onclick = function getData () {
 }
 var button = document.getElementById("knapp3")
 button.onclick = function getData () {
-    let datum = document.getElementById("datum")['value']
+    let datum = document.getElementById("datum2")['value']
 
 
 
@@ -152,7 +152,7 @@ button.onclick = function getData () {
 }
 var button = document.getElementById("knapp4")
 button.onclick = function getData () {
-    let datum = document.getElementById("datum")['value']
+    let datum = document.getElementById("datum2")['value']
 
 
 
@@ -202,7 +202,7 @@ button.onclick = function getData () {
 }
 var button = document.getElementById("knapp5")
 button.onclick = function getData () {
-    let datum = document.getElementById("datum")['value']
+    let datum = document.getElementById("datum3")['value']
 
 
 
@@ -228,7 +228,7 @@ button.onclick = function getData () {
 
                     title: {
 
-                        text: "Luftfuktighet"
+                        text: "Luftfuktighet i %"
 
                     },
 
@@ -253,7 +253,7 @@ button.onclick = function getData () {
 }
 var button = document.getElementById("knapp6")
 button.onclick = function getData () {
-    let datum = document.getElementById("datum")['value']
+    let datum = document.getElementById("datum3")['value']
 
 
 
@@ -278,7 +278,7 @@ button.onclick = function getData () {
 
                     title: {
 
-                        text: "Temperatur"
+                        text: "Temperatur i C°"
 
                     },
 
@@ -303,7 +303,7 @@ button.onclick = function getData () {
 }
 var button = document.getElementById("knapp7")
 button.onclick = function getData () {
-    let datum = document.getElementById("datum")['value']
+    let datum = document.getElementById("datum4")['value']
 
 
 
@@ -329,7 +329,7 @@ button.onclick = function getData () {
 
                     title: {
 
-                        text: "Luftfuktighet"
+                        text: "Luftfuktighet i %"
 
                     },
 
@@ -354,7 +354,7 @@ button.onclick = function getData () {
 }
 var button = document.getElementById("knapp8")
 button.onclick = function getData () {
-    let datum = document.getElementById("datum")['value']
+    let datum = document.getElementById("datum4")['value']
 
 
 
@@ -379,7 +379,7 @@ button.onclick = function getData () {
 
                     title: {
 
-                        text: "Temperatur"
+                        text: "Temperatur i C°"
 
                     },
 
