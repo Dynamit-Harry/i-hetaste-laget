@@ -127,7 +127,7 @@ button.onclick = function getData () {
 
                     title: {
 
-                        text: "Luftfuktighet"
+                        text: "Luftfuktighet i %"
 
                     },
 
@@ -177,7 +177,7 @@ button.onclick = function getData () {
 
                     title: {
 
-                        text: "Temperatur"
+                        text: "Temperatur i C°"
 
                     },
 
