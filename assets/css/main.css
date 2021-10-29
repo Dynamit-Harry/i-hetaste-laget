@@ -1488,6 +1488,7 @@ ul.actions {
 		}
 		#datum {
 			color: #000000
+		
 		}
 		#datum2 {
 			color: #000000
@@ -1503,4 +1504,7 @@ ul.actions {
 		}
 		#humButton {
 			color: blue
+		}
+		#knapp{
+			width: 10px;
 		}
